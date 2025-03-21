@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Lista de Productos</h2>
+
+    <form id="formularioProducto">
+        <input type="text" id="nombreProducto" placeholder="Nombre del producto" required>
+        <input type="number" id="cantidadProducto" placeholder="Cantidad" min="1" required>
+        <input type="number" id="precioProducto" placeholder="Precio unitario" min="0.01" step="0.01" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Precio Total</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tablaProductos"></tbody>
+    </table>
+
+    <p id="total">Total: $0.00</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
